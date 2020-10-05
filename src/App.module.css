@@ -28,10 +28,19 @@ body {
   
   @media only screen and (max-width: 770px) {
     .container {
-      margin: 0 10%;
+      margin: 0 5%;
     }
   
     .image {
       width: 100%;
+    }
+
+    h1{
+      font-size: 65px;
+      margin-top: 50px;
+    }
+  
+    .virus{
+      max-height: 65px;
     }
   }
