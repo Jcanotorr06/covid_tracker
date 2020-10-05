@@ -3,10 +3,10 @@ import { Grid } from '@material-ui/core';
 
 import CardComponent from './Card/Card';
 import styles from './Cards.module.css';
-
+import loading from '../../images/loading.gif'
 const Cards = ({ data: { TotalConfirmed, TotalDeaths, TotalRecovered, Date } }) => {
   if (!TotalConfirmed) {
-    return 'Loading...';
+    return <img src={loading} alt="spinner" />;
   }
 
   return (
@@ -39,4 +39,3 @@ const Cards = ({ data: { TotalConfirmed, TotalDeaths, TotalRecovered, Date } }) 
 };
 
 export default Cards
-
